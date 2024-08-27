@@ -24,3 +24,4 @@ test_accuracy
 
 # Dependencies
 *.P
+*.vcxproj
