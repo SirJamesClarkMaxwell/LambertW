@@ -22,10 +22,10 @@ project "LambertW"
     defines{
         "M_E=2.7182818284590452354"
     }
-    targetdir ( "%{wks.location}/lib/" )
-    objdir ( "%{wks.location}/obj/%{cfg.buildcfg}" )
+    targetdir ( "%{wks.location}/lib/%{cfg.buildcfg}/" )
+    objdir ( "%{wks.location}/obj/%{cfg.buildcfg}/" )
 
-    libdirs ( "%{wks.location}/lib" )
+    libdirs ( "%{wks.location}/lib/%{cfg.buildcfg}/" )
 
     filter { "configurations:Debug" }
         defines { "DEBUG" }
